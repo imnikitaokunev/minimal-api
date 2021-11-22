@@ -1,6 +1,6 @@
 ﻿using MinimalApi.Models;
 
-namespace MinimalApi.Repositories;
+namespace MinimalApi.Persistence;
 
 public interface ITodoRepository
 {

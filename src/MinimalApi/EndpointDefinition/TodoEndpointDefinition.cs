@@ -1,5 +1,5 @@
 ﻿using MinimalApi.Models;
-using MinimalApi.Repositories;
+using MinimalApi.Persistence;
 
 namespace MinimalApi.EndpointDefinition;
 
@@ -51,6 +51,6 @@ public class TodoEndpointDefinition : IEndpointDefinition
 
     public void DefineServices(IServiceCollection services)
     {
-        services.AddSingleton<ITodoRepository, TodoRepository>();
+        services.AddScoped<ITodoRepository, TodoRepository>();
     }
 }
